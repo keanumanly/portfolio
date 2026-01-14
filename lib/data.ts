@@ -5,7 +5,7 @@ export const AboutData = {
     title: "Software Engineer",
     location: "Legazpi City, Albay Philippines",
     slugan: "Building intelligent systems with human intent",
-    summary: `Hey there, I’m keanu a software engineer with more than 5 years of experience designing and 
+    summary: `Hey there, I’m Keanu a software engineer with more than 5+ years of experience designing and 
     building scalable APIs and web applications.`,
     summary1: `where I work on AI-driven projects including an AI-powered call analysis platform for 
     real-time and post-call insights. I also maintain CRM systems, build and integrate APIs, and focus 
@@ -288,10 +288,10 @@ export const AboutData = {
       "Scalable Web App Architecture"
     ],
     interest: [
-      "Dog",
-      "Coffee",
-      "Bicycle Ride",
-      "Games"  
+      "Dog Lover",
+      "Coffee Enthusiast",
+      "Riding Bicycle",
+      "Playing Games"  
     ]
   };
   
