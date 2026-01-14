@@ -17,7 +17,6 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }[];
   className?: string;
 }) => {
@@ -84,8 +83,6 @@ export const FloatingNav = ({
                         "bg-zinc-200 text-neutral-900 dark:bg-zinc-800 dark:text-neutral-50"
                     )}
                 > 
-        
-                    <span className="block sm:hidden">{navItem.icon}</span>
                     <span className="hidden sm:block text-sm">{navItem.name}</span>
                 </a>
                 )} 
