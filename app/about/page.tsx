@@ -12,7 +12,7 @@ export default function AboutPage() {
     return (
       <div id="about" className="relative flex nmax-h-screen h-full w-full flex-col items-start justify-start overflow-hidden">
         {
-            pathname === "/" && <BackgroundBeams />
+            pathname === "/about" && <BackgroundBeams />
         }
         <BackgroundBeams />
         <div  id="aboutsection" className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-12 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
