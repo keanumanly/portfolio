@@ -4,8 +4,12 @@ import { BackgroundBeams } from "../components/ui/background-beams"
 import { Marquee } from "../components/ui/marquee"
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { AboutData } from "@/lib/data";
+import { usePathname } from "next/navigation";
 
 export default function FeatProjectPage() {
+    const pathname = usePathname();
+    console.log("path proj:", pathname)
+
       const ReviewCard = ({
         img
       }: {
@@ -28,7 +32,9 @@ export default function FeatProjectPage() {
       
     return(
         <div id="featureproj" className="min-h-screen bg-background relative">
-            <BackgroundBeams />
+            {
+                pathname === "/projects" && <BackgroundBeams />
+            }
             <div className="border-b border-border/50">
                 <div className="max-w-5xl mx-auto relative">
                 <div className="p-3 flex items-center justify-between">

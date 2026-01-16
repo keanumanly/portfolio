@@ -1,11 +1,16 @@
 "use client";
 import { BackgroundBeams } from "../components/ui/background-beams"
 import { AboutData } from "@/lib/data";
+import { usePathname } from "next/navigation";
 
 export default function ExperiencePage() {
+    const pathname = usePathname();
+    console.log("path exp:", pathname, )
     return (
         <div id="experience" className="min-h-screen bg-background relative">
-            <BackgroundBeams />
+            {
+                pathname === "/experience" && <BackgroundBeams />
+            }
             <div className="border-b border-border/50">
                 <div className="max-w-5xl mx-auto relative">
                 <div className="p-3 flex items-center justify-between">
