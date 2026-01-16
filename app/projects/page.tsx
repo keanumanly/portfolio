@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 
 export default function FeatProjectPage() {
     const pathname = usePathname();
-    console.log("path proj:", pathname)
 
       const ReviewCard = ({
         img

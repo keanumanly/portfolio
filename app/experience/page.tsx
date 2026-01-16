@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 
 export default function ExperiencePage() {
     const pathname = usePathname();
-    console.log("path exp:", pathname, )
     return (
         <div id="experience" className="min-h-screen bg-background relative">
             {
