@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://keanu-sect.vercel.app/",
     title: `${meta.name} — ${meta.title}`,
-    description: meta.heroStatement,
+    description: meta.heroSub,
     siteName: meta.name,
   },
   robots: {

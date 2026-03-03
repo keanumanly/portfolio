@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import type { Screenshot } from "@/lib/data";
+import type { Screenshot } from "@/lib/newdata";
 
 export function ScreenshotGallery({ screenshots }: { screenshots: Screenshot[] }) {
     const trackRef        = useRef<HTMLDivElement>(null);
