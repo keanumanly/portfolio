@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: `${meta.name} — ${meta.title}`,
     template: `%s | ${meta.name}`,
   },
-  description: meta.heroStatement,
+  description: meta.heroSub,
   keywords: [
     "Full-Stack Engineer",
     "React",
