@@ -127,6 +127,9 @@ export const meta = {
     tagline: string;
     tags: string[];
     period: string;
+    involvement: string;
+    liveUrl: string;
+    repoUrl: string;
     problem: string;
     solution: string;
     screenshots?: Screenshot[];
@@ -138,7 +141,7 @@ export const meta = {
     features: string[];
     challenges: { title: string; body: string }[];
     impact: string[];
-    status: "live" | "production" | "archived" | "work in progress";
+    status: "live" | "production" | "archived" | "wip";
   }
   
   export const projects: Project[] = [
@@ -147,6 +150,9 @@ export const meta = {
       title: "Call Analysis Platform",
       tagline: "AI-powered call intelligence at production scale.",
       tags: ["React", "Context API", "Material UI", "TailwindCSS", "Dialogflow API", "Python", "FastAPI", "AWS", "Docker"],
+      involvement: "collaborated",
+      liveUrl: "https://app.spero.company/",
+      repoUrl: "",
       period: "2021 – 2025",
       screenshots: [
         {
@@ -163,37 +169,7 @@ export const meta = {
           src: "/screenshots/call-analysis/script_editor.png",
           alt: "Campaign scripting workflow configuration",
           caption: "Dashboard — Campaign configuration overview",
-        },
-        // {
-        //   src: "/screenshots/call-analysis/sperocrm_1.png",
-        //   alt: "Portal Management showing pools number of campaign",
-        //   caption: "Dashboard — Portal Management overview",
-        // },
-        // {
-        //   src: "/screenshots/call-analysis/sperocrm_2.png",
-        //   alt: "Boom Flow Agent List of intent and configuration and console",
-        //   caption: "Dashboard — Boom Flow overview",
-        // },
-        // {
-        //   src: "/screenshots/call-analysis/dashboard.png",
-        //   alt: "Call analysis dashboard showing agent performance metrics",
-        //   caption: "Dashboard — Agent performance overview",
-        // },
-        // {
-        //   src: "/screenshots/call-analysis/call-detail.png",
-        //   alt: "Individual call detail view with AI-generated transcript and scoring",
-        //   caption: "Call Detail — AI transcript & scoring",
-        // },
-        // {
-        //   src: "/screenshots/call-analysis/analytics.png",
-        //   alt: "Analytics view showing call volume trends and quality scores",
-        //   caption: "Analytics — Volume trends & quality scores",
-        // },
-        // {
-        //   src: "/screenshots/call-analysis/admin.png",
-        //   alt: "Admin panel for managing users and configuring analysis parameters",
-        //   caption: "Admin — User management & config",
-        // },
+        }
       ],
       problem:
         "Customer-facing call center operations generate high volumes of audio interaction data with no scalable mechanism for automated quality analysis, agent performance tracking, or business-level insight extraction. Manual review does not scale.",
@@ -250,6 +226,9 @@ export const meta = {
       title: "Personal Portfolio",
       tagline: "Building Production-Ready Software.",
       tags: ["React", "NextJS", "TailwindCSS", "TypeScript", "Javascript"],
+      involvement: "personal",
+      liveUrl: "https://keanu-sect.vercel.app/",
+      repoUrl: "https://github.com/keanumanly/portfolio",
       period: "2025 – Present",
       screenshots: [
         // {
@@ -287,7 +266,85 @@ export const meta = {
         "Demonstrates continuous learning and professional growth",
         "Strengthens professional credibility in the industry"
       ],
-      status: "live",
+      status: "production",
+    },
+    {
+      slug: "demo-portal-management",
+      title: "Demo Portal Management",
+      tagline: "AI-Powered Call Analysis Portal Management.",
+      tags: ["React", "NextJS", "TailwindCSS", "TypeScript", "Javascript"],
+      involvement: "personal",
+      liveUrl: "https://demo-portal-management.vercel.app/",
+      repoUrl: "https://github.com/keanumanly/demo-portal-management",
+      period: "2026 – Present",
+      screenshots: [
+        {
+          src: "/screenshots/portal-management/dashboard.png",
+          alt: "Dashboard is Real-time call analysis and performance metrics.",
+          caption: "Dashboard",
+        },
+        {
+          src: "/screenshots/portal-management/call logs.png",
+          alt: "Call Logs Dashboard is a complete history of all recorded calls.",
+          caption: "Call Logs Dashboard",
+        },
+        {
+          src: "/screenshots/portal-management/call details.png",
+          alt: "Call Details Logs Dashboard is a detailed call analysis and transcript.",
+          caption: "Call Details Logs Dashboard",
+        },
+        {
+          src: "/screenshots/portal-management/transcripts details.png",
+          alt: "Transcripts Details Logs Dashboard is a full call transcripts with speaker labels, sentiment, and flagged moments.",
+          caption: "Transcripts Details Logs Dashboard",
+        },
+        {
+          src: "/screenshots/portal-management/insights.png",
+          alt: "AI Insights Dashboard is AI-generated patterns, coaching tips, and risk signals from your call data.",
+          caption: "AI Insights Dashboard",
+        },
+        {
+          src: "/screenshots/portal-management/analytics.png",
+          alt: "Analytics Dashboard for Call volume, quality scores, sentiment trends, and agent performance over time.",
+          caption: "Analytics Dashboard",
+        },
+      ],
+      problem:
+        `Traditional call centers and customer support teams often operate in a "data vacuum," where thousands of calls are recorded daily but manual oversight remains slow and prone to human error. This creates a significant visibility gap, as managers can typically only review a tiny fraction of total call volume, allowing critical customer frustrations or negative sentiment trends to go unnoticed until it is too late. Furthermore, high-volume teams lack the real-time insights necessary to catch and escalate problematic calls as they happen. Without a unified view of transcripts, agent performance, and customer sentiment, management is left with fragmented metrics that make it difficult to accurately assess the overall health and efficiency of the department.`,
+      solution:
+        `To address these challenges, I developed VocalIQ, a comprehensive AI-driven management portal that transforms raw audio into actionable, real-time intelligence. By integrating automated AI pipelines, the system categorizes calls into positive, neutral, and negative sentiments, providing an immediate health check of customer satisfaction without the need for manual review. I built a "Live Now" analytics engine that tracks active call volumes and resolution rates, empowering managers to respond to surges or issues the moment they occur. Additionally, I created a centralized management layer that unifies transcripts and agent statuses, enabling data-driven coaching and faster escalation of high-risk interactions. Through interactive data visualizations, VocalIQ turns "dark data" into clear, executive-level insights that drive better business decisions.`,
+      stack: {
+        frontend: [ "Javascript", "React", "TailwindCSS", "NextJS", "TypeScript", "Lucide Icon"],
+        backend: ["WIP"],
+        infra: ["Github", "Vercel"],
+      },
+      features: [
+        "Real-Time Performance Dashboard",
+        "Automated Sentiment Analysis",
+        "Integrated Call Logs & Quality Assurance",
+        "Agent Performance Tracking",
+        "Predictive Insights & Trends",
+        "Escalation Management",
+      ],
+      challenges: [
+        {
+          title: "Designing for a fake data problem",
+          body:
+            "The hardest part of a demo app isn't the UI, it's making mockdata feel real.",
+        },
+        {
+          title: "Component architecture at scale without a backend",
+          body:
+            `With no API, all state and filtering had to be client-side.`,
+        }
+      ],
+      impact: [
+        "Demonstrates the full product surface of the Portal Management Platform to clients and recruiters without exposing any production data",
+        "Shows three distinct engineering competencies in one repo: data modeling, component architecture, and data visualization",
+        "The Insights page specifically functions as a sales artifact it shows what the AI layer actually produces, which is the hardest thing to explain about the platform in a resume bullet",
+        "Built entirely without backend, database, or API calls — proving the frontend architecture stands alone as a deliverable"
+      ],
+      status: "production",
     },
   ];
   
