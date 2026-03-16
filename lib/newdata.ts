@@ -127,7 +127,7 @@ export const meta = {
     tagline: string;
     tags: string[];
     period: string;
-    involvement: string;
+    involvement: "personal" | "collaborated" | "company";
     liveUrl: string;
     repoUrl: string;
     problem: string;
@@ -141,7 +141,7 @@ export const meta = {
     features: string[];
     challenges: { title: string; body: string }[];
     impact: string[];
-    status: "live" | "production" | "archived" | "wip";
+    status: "production" | "archived" | "wip";
   }
   
   export const projects: Project[] = [
